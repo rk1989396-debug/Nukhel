@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Game Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1e1e2f;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #00ffcc;
+        }
+        button {
+            font-size: 20px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            background: #00ffcc;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #00ccaa;
+        }
+        .score {
+            font-size: 24px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎮 Click Game</h1>
+    <p>Button ko click karo aur score badhao!</p>
+
+    <div class="score">
+        Score: <span id="score">0</span>
+    </div>
+
+    <button onclick="increaseScore()">CLICK ME</button>
+
+    <script>
+        let score = 0;
+
+        function increaseScore() {
+            score++;
+            document.getElementById("score").innerText = score;
+        }
+    </script>
+
+</body>
+</html>
+
+
